@@ -1,6 +1,8 @@
-// ジョイスティック：
-// https://www.switch-science.com/catalog/5308/
-// 
+/**
+ * ジョイスティック：
+ * 
+ * https://www.switch-science.com/catalog/5308/
+ */
 let R = 0
 let L = 0
 let DISP_R = 0
@@ -14,8 +16,6 @@ basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P2, 0)
     // P0は横方向
     // P1は縦方向
-    // 
-    //                     
     L = Math.map(pins.analogReadPin(AnalogPin.P1), 0, 1023, -100, 100)
     pins.digitalWritePin(DigitalPin.P2, 1)
     R = Math.map(pins.analogReadPin(AnalogPin.P1), 0, 1023, -100, 100)
