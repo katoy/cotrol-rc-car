@@ -1,3 +1,6 @@
+// ジョイスティック：
+// https://www.switch-science.com/catalog/5308/
+// 
 let R = 0
 let L = 0
 let DISP_R = 0
